@@ -1,5 +1,7 @@
 # py-time-between
-Ordinary package to say if a time variable falls between two given times.
+Ordinary package to say if a time variable falls between two given times.  
+
+Motivation: I was working in a test to a job opening, and I needed it, but I did not want google this. I know that exists a lot of code like this.  
 
 ### Usage:
 
