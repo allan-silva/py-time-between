@@ -9,6 +9,7 @@ def is_time_between(t, start, end):
         return True
     day_add = 1 if end < start else 0
     end_add = 1 if day_add and end == time(0,0,0,0) else 0
+    test_add = 1 if day_add and t < start else 0
     td_time_start = timedelta(hours=start.hour,
                               minutes=start.minute,
                               seconds=start.second,
@@ -18,7 +19,7 @@ def is_time_between(t, start, end):
                             minutes=end.minute,
                             seconds=end.second,
                             microseconds=end.microsecond)
-    td_testing = timedelta(days=day_add,
+    td_testing = timedelta(days=test_add,
                            hours=t.hour,
                            minutes=t.minute,
                            seconds=t.second,
@@ -26,4 +27,5 @@ def is_time_between(t, start, end):
     start_date = ARBITRARY_DATE + td_time_start
     end_date = ARBITRARY_DATE + td_time_end
     testing_date = ARBITRARY_DATE + td_testing
+    print(f'{start_date} <= {testing_date} <= {end_date}')
     return start_date <= testing_date and testing_date <= end_date
