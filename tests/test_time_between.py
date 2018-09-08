@@ -1,9 +1,3 @@
-# py-time-between
-Ordinary package to say if a time variable falls between two given times.
-
-### Usage:
-
-```
 from datetime import time
 from timebetween import is_time_between
 
@@ -35,5 +29,3 @@ def test_is_time_between():
 
     # Hey, did you see a uncovered test case?
     # Please, open a PR.
-
-```
