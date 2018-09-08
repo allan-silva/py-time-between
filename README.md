@@ -4,6 +4,7 @@ Ordinary package to say if a time variable falls between two given times.
 Motivation: I was working in a test to a job opening, and I needed it, but I did not want google this. I know that exists a lot of code like this.  
 
 ### Usage:
+`is_time_between(testing_time, start_time_inclusive, end_time_inclusive)`
 
 ```
 from datetime import time
