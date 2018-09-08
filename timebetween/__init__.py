@@ -27,5 +27,4 @@ def is_time_between(t, start, end):
     start_date = ARBITRARY_DATE + td_time_start
     end_date = ARBITRARY_DATE + td_time_end
     testing_date = ARBITRARY_DATE + td_testing
-    print(f'{start_date} <= {testing_date} <= {end_date}')
     return start_date <= testing_date and testing_date <= end_date
