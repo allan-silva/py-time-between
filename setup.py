@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="py-time-between",
-    version="0.1.1",
+    version="0.1.2",
     author="Allan Silva",
     author_email="allan.tavares@allantavares.com.br",
     description="Ordinary package to say if a time variable falls between two given times.",
