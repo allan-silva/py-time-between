@@ -39,7 +39,7 @@ def test_is_time_between():
     t, s, e = time(22), time(22), time(5, 59, 59)
     assert is_time_between(t, s, e)
 
-    # Hey, did you see a uncovered test case?
+    # Hey, did you see an uncovered test case?
     # Please, open a PR.
 
 ```
